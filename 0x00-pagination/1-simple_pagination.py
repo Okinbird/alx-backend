@@ -5,6 +5,7 @@
                 default value 10.
 """
 
+
 import csv
 import math
 from typing import List, Tuple
@@ -52,6 +53,7 @@ class Server:
             return (pagination[start:end])
         except IndexError:
             return []
+
 
 def index_range(page: int, page_size: int) -> Tuple[int, int]:
     """ Return tuple containing pagination start index and end index. """
