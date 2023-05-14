@@ -79,14 +79,13 @@ class Server:
             return {}
 
         dataset: List = self.dataset()
-        pagedata = self.get_page(page, page_size)
         totalpage: int = len(dataset) if dataset else 0
         totalpages = ceil(totalpage / page_size)
         prevpage: int = (page - 1) if (page - 1) >= 1 else None
         nextpage: int = (page + 1) if (page + 1) <= totalpages else None
 
         hypermedia: Dict = {
-            'page_size': len(pagedata),
+            'page_size': len(data),
             'page': page,
             'data': data,
             'next_page': nextpage,
