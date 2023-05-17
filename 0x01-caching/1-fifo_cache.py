@@ -28,7 +28,7 @@ class FIFOCache(BaseCaching):
             If cache is at max capacity (specified by BaseCaching.MAX_ITEMS),
             discard oldest entry in cache to accommodate new entry.
         """
-        if key or item is not None:
+        if key is not None and item is not None:
             self.cache_data[key] = item
             if key not in self.keys:
                 self.keys.append(key)
