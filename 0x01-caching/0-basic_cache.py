@@ -17,7 +17,7 @@ class BasicCache(BaseCaching):
     def put(self, key, item):
         """ Add key/value pair to cache.
         If either `key` or `item` is None, do nothing. """
-        if key or item is not None:
+        if key is not None and item is not None:
             self.cache_data[key] = item
 
     def get(self, key):
