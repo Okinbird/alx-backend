@@ -81,4 +81,4 @@ Now you should be able to test different translations by visiting `http://127.0.
 
 **Visiting** `http://127.0.0.1:5000/?locale=fr` **should display this level 1 heading:**
 
-[!app_4](https://github.com/Okinbird/alx-backend/blob/master/0x02-i18n/images/app_4.png)
+[app_4](https://github.com/Okinbird/alx-backend/blob/master/0x02-i18n/images/app_4.png)
